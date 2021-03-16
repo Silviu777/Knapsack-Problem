@@ -6,7 +6,6 @@ def read(fis):
     c = np.genfromtxt(fis)
     return c
 
-
 # checks the feasibility of the x choice and determines the objective function
 def ok(x,n,c,v,max):
     val = 0
@@ -57,6 +56,4 @@ def gen(fc,fv,max,dim):
     rep_pop(pop, dim, n)
     
     return pop
-
-
 
