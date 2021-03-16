@@ -17,7 +17,7 @@ def ok(x,n,c,v,max):
     return cost<=max,val
 
 # creates the graphical representation of the population to highlight the variability
-def reprezinta_pop(pop,dim,n):
+def rep_pop(pop,dim,n):
     x=[i for i in range(dim)]
     y=[pop[i][n] for i in range(dim)]
     grafic.plot(x,y,"gs-",markersize=12)
@@ -38,21 +38,24 @@ def gen(fc,fv,max,dim):
     
     n = len(c)
     # considers the population as a list of elements - n+1 individuals lists
-    pop=[]
-    for i in range(dim):
-        gata=False
-        while gata == False:
-           
-        
-            x=np.random.randint(0,2,n)
-            gata,val=ok(x,n,c,v,max)
     
-        x=list(x)
+    pop = []
+    for i in range(dim):
+        ready = False
+        while ready == False: 
+        # generates the x candidate with elemets 0,1
+        
+            x = np.random.randint(0,2,n)
+            read,val = ok(x,n,c,v,max)
+    
+        x = list(x)
        
-        x=x+[val]
+        x = x + [val]
        
-        pop=pop+[x]
-    reprezinta_pop(pop, dim, n)
+        pop = pop + [x]
+        
+    rep_pop(pop, dim, n)
+    
     return pop
 
 
