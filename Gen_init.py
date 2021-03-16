@@ -39,6 +39,7 @@ def gen(fc,fv,max,dim):
     # considers the population as a list of elements - n+1 individuals lists
     
     pop = []
+    
     for i in range(dim):
         ready = False
         while ready == False: 
