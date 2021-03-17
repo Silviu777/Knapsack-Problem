@@ -5,3 +5,6 @@
  Simplifying the theory above, the goal of the GA problem is related to the evolution of generations, preserving the good generations and dump the "bad generations" that might not have good fitness function.
 
 ![image](https://user-images.githubusercontent.com/66177944/111382214-5d70bb80-86af-11eb-8fa3-c101475c4f4a.png)
+
+![image](https://user-images.githubusercontent.com/66177944/111519281-99635980-875f-11eb-93e6-ecc573fcabda.png)
+
